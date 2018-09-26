@@ -9,4 +9,7 @@
     <color name="colorAbu">#718792</color>
     <color name="colorGreen">#00b248</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorCoklat">#bf360c</color>
+    <color name="colorCoklatGelap">#870000</color>
+    <color name="colorCoklatTerang">#f9683a</color>
 </resources>
