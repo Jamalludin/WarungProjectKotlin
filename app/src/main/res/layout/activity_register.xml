@@ -4,127 +4,146 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAbu"
+    android:background="@color/colorAbuMuda"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".activity.register.RegisterActivity">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/warung_kito" />
+        android:layout_height="150dp"
+        android:src="@drawable/tekkadan_logo"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/inputNamaLengkap"
-            android:layout_width="match_parent"
-            android:layout_height="55sp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/edit_text_border"
-            android:hint="Masukan Nama Lengkap"
-            android:inputType="textEmailAddress"
-            android:paddingLeft="10dp"
-            android:textColor="@color/colorBlack" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/colorAbu"
-            android:text="Nama Lengkap"
-            android:textColor="@color/colorWhite"
-            android:textSize="15sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/inputEmailRegister"
-            android:layout_width="match_parent"
-            android:layout_height="55sp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/edit_text_border"
-            android:hint="Masukan Email"
-            android:inputType="textEmailAddress"
-            android:paddingLeft="10dp"
-            android:textColor="@color/colorBlack" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/colorAbu"
-            android:text="Email"
-            android:textColor="@color/colorWhite"
-            android:textSize="15sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
-
-        <EditText
-            android:id="@+id/inputPasswordRegister"
-            android:layout_width="match_parent"
-            android:layout_height="55sp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/edit_text_border"
-            android:hint="Masukan Password"
-            android:inputType="textPassword"
-            android:paddingLeft="10dp"
-            android:textColor="@color/colorBlack" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/colorAbu"
-            android:text="Password"
-            android:textColor="@color/colorWhite"
-            android:textSize="15sp" />
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/btnSignup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_background"
-        android:text="Sign Up"
+        android:text="Warung Project"
+        android:gravity="center"
         android:textColor="@color/colorWhite"
-        android:textStyle="bold" />
+        android:fontFamily="@font/font_southern_aire"
+        android:textSize="45sp"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sudah Punya Akun Ya ? "
-            android:textColor="@color/colorWhite" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/txtLogin"
-            android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/inputNamaLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Masukan Nama Lengkap"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAbuMuda"
+                android:text="Nama Lengkap"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/inputEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Masukan Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAbuMuda"
+                android:text="Email"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/inputPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Masukan Password"
+                android:textColorHint="@color/colorBlack"
+                android:inputType="textPassword"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAbuMuda"
+                android:text="Password"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:text="Sign Up"
             android:textColor="@color/colorWhite"
-            android:textSize="16sp"
             android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah Punya Akun Ya ? "
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

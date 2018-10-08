@@ -5,100 +5,118 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorAbu"
+    android:background="@color/colorAbuMuda"
     android:padding="20dp"
     tools:context=".activity.login.LoginActivity">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/warung_kito"
-        android:layout_marginBottom="20dp"/>
+        android:layout_height="150dp"
+        android:src="@drawable/tekkadan_logo"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="55sp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/edit_text_border"
-            android:paddingLeft="10dp"
-            android:id="@+id/inputEmail"
-            android:textColor="@color/colorBlack"
-            android:inputType="textEmailAddress"
-            android:hint="Masukan Email" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/colorAbu"
-            android:text="Email"
-            android:textColor="@color/colorWhite"
-            android:textSize="15sp"/>
-    </RelativeLayout>
-
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="55sp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/edit_text_border"
-            android:paddingLeft="10dp"
-            android:id="@+id/inputPassword"
-            android:textColor="@color/colorBlack"
-            android:hint="Masukan Password"
-            android:inputType="textPassword"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/colorAbu"
-            android:text="Password"
-            android:textColor="@color/colorWhite"
-            android:textSize="15sp"/>
-    </RelativeLayout>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/btnLogin"
+        android:text="Warung Project"
+        android:gravity="center"
         android:textColor="@color/colorWhite"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_background"/>
+        android:fontFamily="@font/font_southern_aire"
+        android:textSize="45sp"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Belum Punya Akun ? "
-            android:textColor="@color/colorWhite" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_text_border"
+                android:paddingLeft="10dp"
+                android:id="@+id/inputEmail"
+                android:textColor="@color/colorBlack"
+                android:inputType="textEmailAddress"
+                android:hint="Masukan Email"
+                android:textColorHint="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAbuMuda"
+                android:text="Email"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:id="@+id/txtSigup"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_text_border"
+                android:paddingLeft="10dp"
+                android:id="@+id/inputPassword"
+                android:textColor="@color/colorBlack"
+                android:hint="Masukan Password"
+                android:textColorHint="@color/colorBlack"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAbuMuda"
+                android:text="Password"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/btnLogin"
             android:textColor="@color/colorWhite"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum Punya Akun ? "
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:id="@+id/txtSigup"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

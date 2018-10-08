@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorBackground"
+    android:background="@drawable/back_gradien"
     tools:context=".activity.login.SplashActivity">
 
     <RelativeLayout
@@ -36,8 +36,8 @@
             android:text="@string/app_splash"
             android:textColor="@color/colorWhite"
             android:gravity="center"
-            android:fontFamily="@font/font_malboro"
-            android:textSize="35sp"
+            android:fontFamily="@font/southern_aire"
+            android:textSize="42sp"
             android:textStyle="bold"/>
 
     </RelativeLayout>

@@ -1,5 +1,6 @@
 package id.co.jamal.warungproject.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -9,6 +10,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import id.co.jamal.warungproject.R
+import id.co.jamal.warungproject.activity.produk.ScanProdukActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_home.*
 
@@ -60,7 +62,8 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_camera -> {
-                // Handle the camera action
+                val intent = Intent(applicationContext, ScanProdukActivity::class.java)
+                startActivity(intent)
             }
             R.id.nav_gallery -> {
 
