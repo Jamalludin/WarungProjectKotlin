@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import id.co.jamal.warungproject.R
+import id.co.jamal.warungproject.activity.produk.ResultScanProdukActivity
 import id.co.jamal.warungproject.activity.produk.ScanProdukActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_home.*

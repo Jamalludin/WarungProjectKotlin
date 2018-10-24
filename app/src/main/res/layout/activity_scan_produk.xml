@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.produk.ScanProdukActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <fragment
+        android:id="@+id/barcode_scanner"
+        android:name="info.androidhive.barcode.BarcodeReader"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        app:auto_focus="true"
+        app:use_flash="false" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <info.androidhive.barcode.ScannerOverlay
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44000000"
+        app:line_color="#7323DC"
+        app:line_speed="6"
+        app:line_width="4"
+        app:square_height="200"
+        app:square_width="200" />
 
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_scan_produk" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/qr_code" />
-
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

@@ -13,4 +13,7 @@
     <color name="colorCoklat">#bf360c</color>
     <color name="colorCoklatGelap">#870000</color>
     <color name="colorCoklatTerang">#f9683a</color>
+    <color name="colorCoklatBaru">#e53935</color>
+    <color name="lbl_value">#222222</color>
+    <color name="colorAbuTerang">#9e9e9e</color>
 </resources>

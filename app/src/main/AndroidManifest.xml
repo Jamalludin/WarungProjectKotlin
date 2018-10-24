@@ -32,9 +32,13 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBars" />
         <activity
-            android:name=".activity.produk.ScanProdukActivity"
+            android:name=".activity.produk.ResultScanProdukActivity"
             android:label="@string/title_activity_scan_produk"
-            android:theme="@style/AppTheme.NoActionBars"></activity>
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".activity.produk.ScanProdukActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
