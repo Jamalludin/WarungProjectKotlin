@@ -24,7 +24,7 @@ class ResultScanProdukActivity : AppCompatActivity() {
             finish()
         }
 
-        var bundel :Bundle ?=intent.extras
+        var bundel : Bundle ?=intent.extras
         var codeScan = bundel!!.getString("code")
 
         name.text = codeScan
